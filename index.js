@@ -83,3 +83,10 @@ document.querySelector('#dData').innerHTML = myJSON;
 const greet_scaler = greet('Scaler');
 console.log(greet_scaler); // Hello, Scaler
 console.log(message); // How you doing?
+//constroctor
+const const_circle = new Circle(5);
+console.log(const_circle);
+
+document.querySelector('.fec').innerHTML = circle1.location(
+  const_circle.location()
+);
