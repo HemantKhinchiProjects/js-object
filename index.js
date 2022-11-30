@@ -41,7 +41,8 @@ document.querySelector('.space-0').innerHTML = shape.draw(5, 9); //drow method
 //Note: //if is a function is a part of an object in the programming term it call a method
 
 //difrant way to create an object
-//factory function
+
+//---------------------------------factory function
 const createCircle = (radius, isVisible) => {
   return {
     // radius: radius,//in the morden javascript if key and value same then only pass key name
@@ -67,26 +68,18 @@ console.log(circle1.location());
 document.querySelector('.fec').innerHTML = circle1.location(); //drow method
 
 let carOne = car_details('Tata', '140 kmp', 'Red');
-//console.log(carOne);
+
 let carTwo = car_details('Maruti', '140 kmp', 'White');
-//console.log(carTwo);
-//expand Object
+//expand Object example
 let marger = { ...carOne, coloe: 'yellow', carTwo }; // spred oprator
-//console.log(marger);
+
 let dMarger = deketedata(marger);
 //console.log(dMarger);
 console.log(`-----------------------------------------`);
-const myJSON = JSON.stringify(marger).replace(':', ' ').trim('<br/> ');
-let xyz = deletedata(marger);
+const myJSON = JSON.stringify(marger);
+
 document.querySelector('#dData').innerHTML = myJSON;
 
-const greet_scaler = greet('Scaler');
-console.log(greet_scaler); // Hello, Scaler
-console.log(message); // How you doing?
-//constroctor
+//--------------------------------------------constroctor method
 const const_circle = new Circle(5);
 console.log(const_circle);
-
-document.querySelector('.fec').innerHTML = circle1.location(
-  const_circle.location()
-);
