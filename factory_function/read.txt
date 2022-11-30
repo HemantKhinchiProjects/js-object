@@ -1,0 +1,1 @@
+agar hume object function ko duplicate karna hai to copy past ka kaam bahot hi bada ho sakta hai isliye iska dusra way factory function hai jo ki bahot hi asan hai.
