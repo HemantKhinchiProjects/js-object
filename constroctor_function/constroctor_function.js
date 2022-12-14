@@ -20,5 +20,5 @@ function PersonN(firstName, lastName) {
     return this.firstName + ' ' + this.lastName;
   };
 }
-let personk = PersonN('John', 'Doe');
+let personk = new PersonN('John', 'Doe');
 console.log(personk);
